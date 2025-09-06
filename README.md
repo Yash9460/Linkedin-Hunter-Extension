@@ -1,6 +1,6 @@
 # 🔍 LinkedIn Hunter Extension
 
-A **Chrome Extension + Flask Backend** that fetches LinkedIn profile details:  
+A **Chrome Extension + FastAPI Backend** that fetches LinkedIn profile details:  
 **Full Name, Email, Organisation, Designation**.  
 Emails are enriched via the [Hunter.io](https://hunter.io) API.
 
@@ -8,7 +8,7 @@ Emails are enriched via the [Hunter.io](https://hunter.io) API.
 
 ## 📊 Badges
 
-![Made with Flask](https://img.shields.io/badge/Made%20with-Flask-blue?logo=flask)
+![Made with FastAPI](https://img.shields.io/badge/Made%20with-fastapi-blue?logo=fastapi)
 ![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-orange?logo=google-chrome)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -35,7 +35,7 @@ API_KEY = "PUT_YOUR_HUNTER_API_KEY_HERE"
 
 ## Run backend:
 ```bash
-python app.py
+uvicorn app:app --reload --port 5000
 ```
 
 #### Backend runs at: http://127.0.0.1:5000
