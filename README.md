@@ -49,7 +49,7 @@ uvicorn app:app --reload --port 5000
 ## 🧪 Testing
 
 1. Open LinkedIn profile (e.g.):
-   Raman Ghai
+   [Raman Ghai](https://www.linkedin.com/in/raman-ghai-8bb7b418/)
 
 2. Click the extension icon.
 
