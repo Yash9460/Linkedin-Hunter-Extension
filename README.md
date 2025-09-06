@@ -18,8 +18,8 @@ Emails are enriched via the [Hunter.io](https://hunter.io) API.
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/linkedin-hunter-extension.git
-cd linkedin-hunter-extension
+git clone https://github.com/Yash9460/Linkedin-Hunter-Extension.git
+cd Linkedin-Hunter-Extension
 ```
 
 ### 2. Setup Flask Backend
