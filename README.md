@@ -1,1 +1,69 @@
-# Linkedin-Hunter-Extension
+# 🔍 LinkedIn Hunter Extension
+
+A **Chrome Extension + Flask Backend** that fetches LinkedIn profile details:  
+**Full Name, Email, Organisation, Designation**.  
+Emails are enriched via the [Hunter.io](https://hunter.io) API.
+
+---
+
+## 📊 Badges
+
+![Made with Flask](https://img.shields.io/badge/Made%20with-Flask-blue?logo=flask)
+![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-orange?logo=google-chrome)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+---
+
+## 🚀 Setup Instructions
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/linkedin-hunter-extension.git
+cd linkedin-hunter-extension
+```
+
+### 2. Setup Flask Backend
+
+```bash
+cd python-backend
+pip install -r requirements.txt
+```
+
+## Edit app.py and replace:
+
+API_KEY = "PUT_YOUR_HUNTER_API_KEY_HERE"
+
+## Run backend:
+```bash
+python app.py
+```
+
+#### Backend runs at: http://127.0.0.1:5000
+
+### 3. Load Chrome Extension
+
+- Open Chrome → Extensions → Manage Extensions
+- Enable Developer Mode (top-right toggle)
+- Click Load Unpacked → Select the linkedin-hunter-extension/ folder
+
+## 🧪 Testing
+
+1. Open LinkedIn profile (e.g.):
+   Raman Ghai
+
+2. Click the extension icon.
+
+3. You should see:
+
+- ✅ Name
+- ✅ Organisation
+- ✅ Designation
+- ✅ Email (from Hunter.io)
+
+##### 👉 If no email is found → “Not found” is shown.
+
+### ⚡ Notes
+
+- Chrome Extension scrapes Name, Designation, Organisation directly from LinkedIn DOM.
+- Flask Backend calls Hunter.io API to fetch the most probable email.
+- Email fetching depends on Hunter.io free quota (50 requests/month).
